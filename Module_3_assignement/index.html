@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Menu</title>
+
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <p>Food,LCC</p>
+            <ul class="dropdown" id="list-small">
+                <li>Chicken</li>
+                <li>Beef</li>
+                <li>Sushi</li>
+            </ul>
+        </nav>
+    </header>
+    <div>
+        <h1> Our Menu</h1> 
+            <section class="col-lg-1 col-md-1 col-sd-1">
+                <h4 class="chicken">chicken</h4>
+                <p>lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </section>
+            <section class="col-lg-2 col-md-2 col-sd-2">
+                <h4 class="beef">Beef</h4>
+                <p>lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </section>
+            <section class="col-lg-3 col-md-3 col-sd-3">
+                <h4 class="Sushi">Sushi</h4>
+                <p>lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </section>
+    </div>
+</body>
+<script >function updateListVisibility() {
+    const smallList = document.getElementById('list-small');
+
+    if (window.matchMedia('min-width: 768px and max-width: 991px').matches) {
+      smallList.style.display = 'none';
+
+    } else if (window.matchMedia('min-width: 992px').matches) {
+      smallList.style.display = 'block';
+
+    } else {
+      smallList.style.display = 'block';
+  
+   
+    }
+  }
+
+ </script>
+</html>
