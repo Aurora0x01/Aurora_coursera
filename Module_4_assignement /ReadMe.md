@@ -7,4 +7,5 @@ This is a simple web page that uses JavaScript to loop over an array of names an
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/Aurora0x01/Solution_module3code.html.git
+   git clone https://github.com/Aurora0x01/Aurora_coursera/Module_4_assignement
+/Solution_module3code.html
